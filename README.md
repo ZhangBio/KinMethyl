@@ -8,6 +8,10 @@
 - Fusion of raw and predicted IPD/PW signals with sequence
 - Support for multiple methylation types: 5mC, 6mA, 4mC
 
+# Usage
+We are in the process of preparing example scripts and detailed usage instructions for this repository.  
+In the meantime, all core model training and prediction scripts are available in the top-level directory.
+
 
 
 # Acknowledgements
