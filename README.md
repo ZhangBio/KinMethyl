@@ -30,22 +30,34 @@ pip install torch torchvision torchaudio --index-url https://download.pytorch.or
 
 # With NVIDIA GPU (CUDA 12.1)
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+
+```
+
 ### 2. Clone this repository
+```bash
 git clone https://github.com/ZhangBio/KinMethyl.git
 cd KinMethyl
-###3. Install dependencies
+```
+### 3. Install dependencies
+
+```bash
 pip install -r requirements.txt
 pip install -e .
+```
 
 ## Quick Start
-```bash
-###Train a classification model
-kinmethyl-train --train_file example_data/P6C4_5mC/example_train.tsv --valid_file example_data/P6C4_5mC/example_dev.tsv --model_dir examples/model_out  --model_type combined --seq_model models/regression_models/P6C4_regression.ckpt --batch_size 32
 
-###Predict on test data
+### Train a classification model
+```bash
+kinmethyl-train --train_file example_data/P6C4_5mC/example_train.tsv --valid_file example_data/P6C4_5mC/example_dev.tsv --model_dir examples/model_out  --model_type combined --seq_model models/regression_models/P6C4_regression.ckpt --batch_size 32
+```
+### Predict on test data
+```bash
 kinmethyl-test -data_file  example_data/P6C4_5mC/example_test.tsv --model_file examples/model_out/combined.b21_epoch1.ckpt  --model_type combined
+```
 
 # Acknowledgements
 We adopted feature extraction pipeline from ccsmeth project. https://github.com/PengNi/ccsmeth
 # KinMethyl
 Kinetic Modeling-based Methylation Detector
+
