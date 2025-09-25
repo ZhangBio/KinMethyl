@@ -1,0 +1,3 @@
+[console_scripts]
+kinmethyl-test = kinmethyl.test:main
+kinmethyl-train = kinmethyl.train:main
